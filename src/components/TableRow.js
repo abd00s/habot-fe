@@ -14,9 +14,6 @@ class TableRow extends Component {
             {this.props.obj.period}
           </td>
           <td>
-            <button>Edit</button>
-          </td>
-          <td>
             <button>Delete</button>
           </td>
         </tr>
