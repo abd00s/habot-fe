@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Index from './components/index.component';
+import Create from './components/create.component';
 
 class App extends Component {
   render() {
@@ -19,10 +20,14 @@ class App extends Component {
               <li>
                 <Link to={'/index'}>Index</Link>
               </li>
+              <li>
+                <Link to={'/create'}>Create</Link>
+              </li>
             </ul>
           </header>
           <Switch>
-              <Route path='/index' component={ Index } />
+            <Route exact path = '/create' component = { Create } />
+            <Route path       = '/index' component  = { Index } />
           </Switch>
         </div>
       </Router>
